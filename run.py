@@ -127,7 +127,6 @@ def simple_run():
     data_dev = np.load(config.dev_dir, allow_pickle=True)
     word_dev = data_dev["words"]
     label_dev = data_dev["labels"]
-
     # simple run without k-fold
     run(word_train, label_train, word_dev, label_dev, vocab, device)
 
