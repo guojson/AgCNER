@@ -25,3 +25,5 @@ also you can predict the named  entity of Chinese agricultural diseases and pest
 ```
 python predict.py
 ```
+# AgBERT
+Fine-turned BERT for named entity recognition of agricultural diseases and pests was also released in https://github.com/guojson/AgBERT.git
