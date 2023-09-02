@@ -1,0 +1,3 @@
+call activate torch
+
+python ner.py --train_file=data/agner/0-7/train.txt --eval_file=data/agner/0-7/dev.txt --test_file=data/agner/0-7/test.txt --output_dir=agcner/bert_bilstm-crf/1

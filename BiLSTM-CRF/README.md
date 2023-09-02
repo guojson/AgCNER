@@ -1,9 +1,5 @@
 # AgCNER
 a publicly available dataset for Chinese agricultural diseases and pests
-
-# Note
-In this program, only a part of dataset is made public because the manuscript is still under review. all data will be released as soon as the paper is accepted.
-
 # Data
 The released data can be found in data/agcner. The data information and results can be found bellow:
 ## Entity Tags

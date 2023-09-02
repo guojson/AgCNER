@@ -12,7 +12,7 @@ from Vocabulary import Vocabulary
 from data_loader import NERDataset
 from torch.utils.data import DataLoader
 from sklearn.model_selection import KFold
-from train import train, test, sample_test
+from train import train, test
 from sklearn.model_selection import train_test_split
 
 input_array = [[1642, 1291, 40, 2255, 970, 46, 124, 1604, 1915, 547, 0, 173,

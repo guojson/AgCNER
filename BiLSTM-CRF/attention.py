@@ -2,8 +2,6 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-
 class Attention(nn.Module):
     def __init__(self, embed_dim, hidden_dim=None, out_dim=None, n_head=12, score_function='bi_linear', dropout=0.5):  #score_function 注意力评分函数
         ''' Attention Mechanism
