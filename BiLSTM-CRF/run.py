@@ -151,6 +151,17 @@ def run(word_train, label_train, word_dev, label_dev, vocab, device, kf_index=0)
                        vocab_size=vocab.vocab_size(),
                        target_size=vocab.label_size())
 
+    # model = IDCNN_CRF(config=config, embedding_size=config.embedding_size,
+    #                    hidden_size=config.hidden_size,
+    #                    drop_out=config.drop_out,
+    #                    vocab_size=vocab.vocab_size(),
+    #                    target_size=vocab.label_size())
+    #
+    # model = BiLSTM_Attention_CRF(config=config, embedding_size=config.embedding_size,
+    #                    hidden_size=config.hidden_size,
+    #                    drop_out=config.drop_out,
+    #                    vocab_size=vocab.vocab_size(),
+    #                    target_size=vocab.label_size())
 
     model.to(device)
     # optimizer
