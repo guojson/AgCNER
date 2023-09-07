@@ -1,0 +1,14 @@
+accuracy:  98.27%; precision:  93.76%; recall:  93.92%; FB1:  93.84
+              BEL: precision:  87.86%; recall:  92.12%; FB1:  89.94  173
+              CLA: precision:  59.28%; recall:  51.34%; FB1:  55.02  194
+              COM: precision:  72.22%; recall:  81.25%; FB1:  76.47  108
+              CRO: precision:  96.35%; recall:  96.47%; FB1:  96.41  4079
+              DIS: precision:  97.72%; recall:  97.93%; FB1:  97.82  2850
+             DRUG: precision:  91.60%; recall:  92.33%; FB1:  91.96  2654
+              FER: precision:  93.46%; recall:  92.59%; FB1:  93.02  107
+              ORG: precision:  72.29%; recall:  80.06%; FB1:  75.98  350
+             PART: precision:  90.94%; recall:  88.64%; FB1:  89.78  1656
+              PER: precision:  92.10%; recall:  90.85%; FB1:  91.47  2189
+              PET: precision:  96.99%; recall:  97.61%; FB1:  97.30  4547
+              REA: precision:  90.70%; recall:  93.46%; FB1:  92.06  441
+          STRAINS: precision:  90.77%; recall:  91.75%; FB1:  91.26  1213

@@ -1,0 +1,609 @@
+2023-06-07 11:59:23
+device: cuda:0 n_gpu: 2
+***** Running training *****
+  Num examples = 47787
+  Num Epochs = 30
+  Total optimization steps = 44820
+Train/loss918.4870997924804500
+Train/loss266.088874755859361000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21817 phrases; correct: 19112. accuracy:  97.66%; precision:  87.60%; recall:  90.67%; FB1:  89.11
+              BEL: precision:  85.78%; recall:  98.03%; FB1:  91.49  232
+              CLA: precision:  11.86%; recall:   5.65%; FB1:   7.65  118
+              COM: precision:  62.12%; recall:  71.93%; FB1:  66.67  66
+              CRO: precision:  91.34%; recall:  95.10%; FB1:  93.18  4526
+              DIS: precision:  95.87%; recall:  96.67%; FB1:  96.27  2881
+             DRUG: precision:  83.47%; recall:  89.19%; FB1:  86.24  2717
+              FER: precision:  79.51%; recall:  71.32%; FB1:  75.19  122
+              ORG: precision:  64.00%; recall:  79.01%; FB1:  70.72  400
+             PART: precision:  83.88%; recall:  85.67%; FB1:  84.77  1725
+              PER: precision:  79.87%; recall:  86.68%; FB1:  83.13  2558
+              PET: precision:  94.12%; recall:  94.45%; FB1:  94.28  4811
+              REA: precision:  73.47%; recall:  89.18%; FB1:  80.56  505
+          STRAINS: precision:  82.35%; recall:  85.92%; FB1:  84.10  1156
+----------the best f1 is 0.8910854158895933---------
+Train/loss203.471516830444331500
+Train/loss162.00741851806642000
+Train/loss154.930892608642582500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21409 phrases; correct: 19378. accuracy:  98.00%; precision:  90.51%; recall:  91.93%; FB1:  91.22
+              BEL: precision:  88.84%; recall:  98.03%; FB1:  93.21  224
+              CLA: precision:  37.84%; recall:  28.23%; FB1:  32.33  185
+              COM: precision:  57.32%; recall:  82.46%; FB1:  67.63  82
+              CRO: precision:  93.30%; recall:  95.51%; FB1:  94.40  4450
+              DIS: precision:  96.96%; recall:  97.02%; FB1:  96.99  2859
+             DRUG: precision:  88.79%; recall:  89.74%; FB1:  89.26  2570
+              FER: precision:  78.00%; recall:  86.03%; FB1:  81.82  150
+              ORG: precision:  66.93%; recall:  79.32%; FB1:  72.60  384
+             PART: precision:  85.95%; recall:  87.63%; FB1:  86.78  1722
+              PER: precision:  86.34%; recall:  87.99%; FB1:  87.16  2402
+              PET: precision:  95.17%; recall:  95.35%; FB1:  95.26  4803
+              REA: precision:  78.62%; recall:  90.14%; FB1:  83.99  477
+          STRAINS: precision:  89.19%; recall:  88.63%; FB1:  88.91  1101
+----------the best f1 is 0.9121634343814725---------
+Train/loss135.47360742950443000
+Train/loss112.89766727447513500
+Train/loss110.88500655364994000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21973 phrases; correct: 19641. accuracy:  97.96%; precision:  89.39%; recall:  93.18%; FB1:  91.24
+              BEL: precision:  89.59%; recall:  97.54%; FB1:  93.40  221
+              CLA: precision:  48.15%; recall:  47.18%; FB1:  47.66  243
+              COM: precision:  59.26%; recall:  84.21%; FB1:  69.57  81
+              CRO: precision:  92.34%; recall:  95.33%; FB1:  93.81  4488
+              DIS: precision:  96.33%; recall:  97.30%; FB1:  96.81  2886
+             DRUG: precision:  88.21%; recall:  92.06%; FB1:  90.09  2654
+              FER: precision:  79.25%; recall:  92.65%; FB1:  85.42  159
+              ORG: precision:  64.60%; recall:  80.56%; FB1:  71.70  404
+             PART: precision:  84.70%; recall:  89.46%; FB1:  87.01  1784
+              PER: precision:  86.78%; recall:  89.10%; FB1:  87.92  2420
+              PET: precision:  93.46%; recall:  96.22%; FB1:  94.82  4936
+              REA: precision:  80.30%; recall:  91.11%; FB1:  85.36  472
+          STRAINS: precision:  83.51%; recall:  92.33%; FB1:  87.70  1225
+----------the best f1 is 0.9124314782123943---------
+Train/loss107.904605987548834500
+Train/loss84.022146034240725000
+Train/loss89.838835205078135500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21890 phrases; correct: 19710. accuracy:  98.08%; precision:  90.04%; recall:  93.51%; FB1:  91.74
+              BEL: precision:  86.09%; recall:  97.54%; FB1:  91.45  230
+              CLA: precision:  47.71%; recall:  62.90%; FB1:  54.26  327
+              COM: precision:  69.35%; recall:  75.44%; FB1:  72.27  62
+              CRO: precision:  94.34%; recall:  96.30%; FB1:  95.31  4437
+              DIS: precision:  96.73%; recall:  97.34%; FB1:  97.03  2875
+             DRUG: precision:  90.27%; recall:  90.48%; FB1:  90.38  2549
+              FER: precision:  85.03%; recall:  91.91%; FB1:  88.34  147
+              ORG: precision:  66.41%; recall:  78.70%; FB1:  72.03  384
+             PART: precision:  83.85%; recall:  90.05%; FB1:  86.84  1814
+              PER: precision:  84.34%; recall:  90.28%; FB1:  87.21  2523
+              PET: precision:  94.59%; recall:  96.33%; FB1:  95.45  4882
+              REA: precision:  78.44%; recall:  91.83%; FB1:  84.61  487
+          STRAINS: precision:  86.62%; recall:  91.70%; FB1:  89.08  1173
+----------the best f1 is 0.9174055714584933---------
+Train/loss85.723487602233896000
+Train/loss67.68401242828376500
+Train/loss70.581766571044927000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21513 phrases; correct: 19716. accuracy:  98.16%; precision:  91.65%; recall:  93.53%; FB1:  92.58
+              BEL: precision:  91.24%; recall:  97.54%; FB1:  94.29  217
+              CLA: precision:  54.12%; recall:  60.89%; FB1:  57.31  279
+              COM: precision:  64.47%; recall:  85.96%; FB1:  73.68  76
+              CRO: precision:  94.58%; recall:  96.27%; FB1:  95.42  4425
+              DIS: precision:  97.25%; recall:  97.93%; FB1:  97.59  2877
+             DRUG: precision:  90.02%; recall:  91.11%; FB1:  90.56  2574
+              FER: precision:  88.28%; recall:  94.12%; FB1:  91.10  145
+              ORG: precision:  73.58%; recall:  79.94%; FB1:  76.63  352
+             PART: precision:  87.31%; recall:  89.58%; FB1:  88.43  1733
+              PER: precision:  87.88%; recall:  89.18%; FB1:  88.52  2392
+              PET: precision:  94.97%; recall:  96.87%; FB1:  95.91  4890
+              REA: precision:  85.68%; recall:  86.30%; FB1:  85.99  419
+          STRAINS: precision:  89.33%; recall:  91.43%; FB1:  90.37  1134
+----------the best f1 is 0.9258076634109692---------
+Train/loss68.972310745239267500
+Train/loss57.122467689514168000
+Train/loss59.010402534484868500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21472 phrases; correct: 19715. accuracy:  98.14%; precision:  91.82%; recall:  93.53%; FB1:  92.67
+              BEL: precision:  88.39%; recall:  97.54%; FB1:  92.74  224
+              CLA: precision:  57.03%; recall:  57.26%; FB1:  57.14  249
+              COM: precision:  61.19%; recall:  71.93%; FB1:  66.13  67
+              CRO: precision:  95.42%; recall:  95.91%; FB1:  95.66  4369
+              DIS: precision:  96.94%; recall:  97.62%; FB1:  97.28  2877
+             DRUG: precision:  90.73%; recall:  91.58%; FB1:  91.15  2567
+              FER: precision:  88.03%; recall:  91.91%; FB1:  89.93  142
+              ORG: precision:  69.65%; recall:  79.32%; FB1:  74.17  369
+             PART: precision:  87.23%; recall:  89.34%; FB1:  88.27  1730
+              PER: precision:  89.29%; recall:  90.24%; FB1:  89.77  2382
+              PET: precision:  94.75%; recall:  96.66%; FB1:  95.69  4891
+              REA: precision:  82.46%; recall:  90.38%; FB1:  86.24  456
+          STRAINS: precision:  88.69%; recall:  91.97%; FB1:  90.30  1149
+----------the best f1 is 0.9266527226152147---------
+Train/loss55.8229757156372069000
+Train/loss45.3032268218994159500
+Train/loss47.4712331085205110000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21447 phrases; correct: 19733. accuracy:  98.16%; precision:  92.01%; recall:  93.61%; FB1:  92.80
+              BEL: precision:  87.28%; recall:  98.03%; FB1:  92.34  228
+              CLA: precision:  53.82%; recall:  59.68%; FB1:  56.60  275
+              COM: precision:  55.13%; recall:  75.44%; FB1:  63.70  78
+              CRO: precision:  96.04%; recall:  96.02%; FB1:  96.03  4346
+              DIS: precision:  96.71%; recall:  97.86%; FB1:  97.29  2891
+             DRUG: precision:  90.57%; recall:  91.03%; FB1:  90.80  2556
+              FER: precision:  89.66%; recall:  95.59%; FB1:  92.53  145
+              ORG: precision:  70.42%; recall:  83.02%; FB1:  76.20  382
+             PART: precision:  87.70%; recall:  89.05%; FB1:  88.37  1715
+              PER: precision:  89.93%; recall:  90.58%; FB1:  90.26  2374
+              PET: precision:  95.61%; recall:  96.25%; FB1:  95.93  4826
+              REA: precision:  78.36%; recall:  93.99%; FB1:  85.46  499
+          STRAINS: precision:  89.66%; recall:  91.61%; FB1:  90.62  1132
+----------the best f1 is 0.9280440201288624---------
+Train/loss45.2228447418212910500
+Train/loss36.7694331893920911000
+Train/loss40.8626986770629911500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21422 phrases; correct: 19733. accuracy:  98.24%; precision:  92.12%; recall:  93.61%; FB1:  92.86
+              BEL: precision:  89.86%; recall:  96.06%; FB1:  92.86  217
+              CLA: precision:  59.41%; recall:  57.26%; FB1:  58.32  239
+              COM: precision:  62.50%; recall:  70.18%; FB1:  66.12  64
+              CRO: precision:  94.82%; recall:  96.46%; FB1:  95.63  4422
+              DIS: precision:  97.62%; recall:  97.51%; FB1:  97.57  2854
+             DRUG: precision:  91.46%; recall:  90.52%; FB1:  90.99  2517
+              FER: precision:  90.97%; recall:  96.32%; FB1:  93.57  144
+              ORG: precision:  69.06%; recall:  77.16%; FB1:  72.89  362
+             PART: precision:  87.46%; recall:  90.05%; FB1:  88.74  1739
+              PER: precision:  88.18%; recall:  90.88%; FB1:  89.51  2429
+              PET: precision:  95.57%; recall:  96.77%; FB1:  96.17  4854
+              REA: precision:  81.12%; recall:  93.99%; FB1:  87.08  482
+          STRAINS: precision:  91.08%; recall:  90.34%; FB1:  90.71  1099
+----------the best f1 is 0.9285899155313994---------
+Train/loss40.0060958786010712000
+Train/loss30.24979781341552612500
+Train/loss31.55235992813110413000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21490 phrases; correct: 19759. accuracy:  98.14%; precision:  91.95%; recall:  93.74%; FB1:  92.83
+              BEL: precision:  88.39%; recall:  97.54%; FB1:  92.74  224
+              CLA: precision:  57.47%; recall:  60.48%; FB1:  58.94  261
+              COM: precision:  51.76%; recall:  77.19%; FB1:  61.97  85
+              CRO: precision:  96.20%; recall:  95.45%; FB1:  95.82  4313
+              DIS: precision:  97.02%; recall:  97.97%; FB1:  97.49  2885
+             DRUG: precision:  90.48%; recall:  91.94%; FB1:  91.20  2584
+              FER: precision:  89.12%; recall:  96.32%; FB1:  92.58  147
+              ORG: precision:  71.99%; recall:  79.32%; FB1:  75.48  357
+             PART: precision:  85.98%; recall:  89.34%; FB1:  87.63  1755
+              PER: precision:  88.38%; recall:  91.30%; FB1:  89.82  2435
+              PET: precision:  95.65%; recall:  96.75%; FB1:  96.19  4849
+              REA: precision:  80.17%; recall:  93.27%; FB1:  86.22  484
+          STRAINS: precision:  90.55%; recall:  90.79%; FB1:  90.67  1111
+Train/loss33.7347347717285213500
+Train/loss26.3053738708496114000
+Train/loss29.02411492156982614500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21259 phrases; correct: 19649. accuracy:  98.09%; precision:  92.43%; recall:  93.22%; FB1:  92.82
+              BEL: precision:  89.72%; recall:  94.58%; FB1:  92.09  214
+              CLA: precision:  58.23%; recall:  58.47%; FB1:  58.35  249
+              COM: precision:  60.61%; recall:  70.18%; FB1:  65.04  66
+              CRO: precision:  95.55%; recall:  95.77%; FB1:  95.66  4357
+              DIS: precision:  96.72%; recall:  97.90%; FB1:  97.30  2892
+             DRUG: precision:  91.01%; recall:  90.72%; FB1:  90.86  2535
+              FER: precision:  89.73%; recall:  96.32%; FB1:  92.91  146
+              ORG: precision:  73.50%; recall:  71.91%; FB1:  72.70  317
+             PART: precision:  87.53%; recall:  90.17%; FB1:  88.83  1740
+              PER: precision:  89.62%; recall:  90.11%; FB1:  89.87  2370
+              PET: precision:  95.95%; recall:  96.47%; FB1:  96.21  4820
+              REA: precision:  79.96%; recall:  93.03%; FB1:  86.00  484
+          STRAINS: precision:  91.86%; recall:  88.63%; FB1:  90.22  1069
+Train/loss26.81372636413574315000
+Train/loss22.4518976440429715500
+Train/loss23.13385766220092816000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21501 phrases; correct: 19797. accuracy:  98.20%; precision:  92.07%; recall:  93.92%; FB1:  92.99
+              BEL: precision:  88.29%; recall:  96.55%; FB1:  92.24  222
+              CLA: precision:  56.83%; recall:  63.71%; FB1:  60.08  278
+              COM: precision:  62.12%; recall:  71.93%; FB1:  66.67  66
+              CRO: precision:  95.29%; recall:  96.43%; FB1:  95.86  4399
+              DIS: precision:  96.86%; recall:  98.11%; FB1:  97.48  2894
+             DRUG: precision:  89.97%; recall:  92.02%; FB1:  90.98  2601
+              FER: precision:  88.89%; recall:  94.12%; FB1:  91.43  144
+              ORG: precision:  73.94%; recall:  80.56%; FB1:  77.10  353
+             PART: precision:  87.82%; recall:  90.11%; FB1:  88.95  1733
+              PER: precision:  88.73%; recall:  90.20%; FB1:  89.46  2396
+              PET: precision:  95.96%; recall:  96.54%; FB1:  96.25  4823
+              REA: precision:  82.07%; recall:  93.51%; FB1:  87.42  474
+          STRAINS: precision:  90.61%; recall:  91.43%; FB1:  91.02  1118
+----------the best f1 is 0.9298731798966652---------
+Train/loss22.46875830459594816500
+Train/loss18.68312652587890517000
+Train/loss20.27322068023681517500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21321 phrases; correct: 19737. accuracy:  98.25%; precision:  92.57%; recall:  93.63%; FB1:  93.10
+              BEL: precision:  88.84%; recall:  98.03%; FB1:  93.21  224
+              CLA: precision:  58.78%; recall:  62.10%; FB1:  60.39  262
+              COM: precision:  53.45%; recall:  54.39%; FB1:  53.91  58
+              CRO: precision:  95.39%; recall:  95.68%; FB1:  95.53  4360
+              DIS: precision:  97.42%; recall:  97.93%; FB1:  97.68  2872
+             DRUG: precision:  90.87%; recall:  91.94%; FB1:  91.40  2573
+              FER: precision:  89.04%; recall:  95.59%; FB1:  92.20  146
+              ORG: precision:  68.84%; recall:  75.00%; FB1:  71.79  353
+             PART: precision:  89.05%; recall:  90.05%; FB1:  89.55  1708
+              PER: precision:  89.12%; recall:  90.71%; FB1:  89.91  2399
+              PET: precision:  96.39%; recall:  96.83%; FB1:  96.61  4816
+              REA: precision:  83.48%; recall:  91.11%; FB1:  87.13  454
+          STRAINS: precision:  91.70%; recall:  90.70%; FB1:  91.20  1096
+----------the best f1 is 0.9309905660377359---------
+Train/loss20.06423987579345818000
+Train/loss14.74538486480712918500
+Train/loss16.4381239700317419000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21365 phrases; correct: 19738. accuracy:  98.23%; precision:  92.38%; recall:  93.64%; FB1:  93.01
+              BEL: precision:  88.39%; recall:  97.54%; FB1:  92.74  224
+              CLA: precision:  58.08%; recall:  68.15%; FB1:  62.71  291
+              COM: precision:  60.32%; recall:  66.67%; FB1:  63.33  63
+              CRO: precision:  96.05%; recall:  95.72%; FB1:  95.89  4332
+              DIS: precision:  96.88%; recall:  97.83%; FB1:  97.35  2885
+             DRUG: precision:  92.33%; recall:  90.92%; FB1:  91.62  2504
+              FER: precision:  86.49%; recall:  94.12%; FB1:  90.14  148
+              ORG: precision:  68.52%; recall:  79.94%; FB1:  73.79  378
+             PART: precision:  87.14%; recall:  90.29%; FB1:  88.69  1750
+              PER: precision:  87.81%; recall:  91.34%; FB1:  89.54  2452
+              PET: precision:  96.48%; recall:  96.54%; FB1:  96.51  4797
+              REA: precision:  82.90%; recall:  92.07%; FB1:  87.24  462
+          STRAINS: precision:  91.66%; recall:  89.26%; FB1:  90.44  1079
+Train/loss17.5020178413391119500
+Train/loss14.9225807037353520000
+Train/loss15.1594230880737320500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21333 phrases; correct: 19790. accuracy:  98.29%; precision:  92.77%; recall:  93.88%; FB1:  93.32
+              BEL: precision:  89.55%; recall:  97.04%; FB1:  93.14  220
+              CLA: precision:  65.92%; recall:  59.27%; FB1:  62.42  223
+              COM: precision:  63.93%; recall:  68.42%; FB1:  66.10  61
+              CRO: precision:  95.79%; recall:  96.39%; FB1:  96.09  4374
+              DIS: precision:  97.20%; recall:  97.30%; FB1:  97.25  2860
+             DRUG: precision:  90.88%; recall:  91.31%; FB1:  91.09  2555
+              FER: precision:  89.73%; recall:  96.32%; FB1:  92.91  146
+              ORG: precision:  71.59%; recall:  76.23%; FB1:  73.84  345
+             PART: precision:  87.44%; recall:  91.12%; FB1:  89.24  1760
+              PER: precision:  89.40%; recall:  90.50%; FB1:  89.94  2386
+              PET: precision:  96.81%; recall:  96.95%; FB1:  96.88  4801
+              REA: precision:  83.62%; recall:  93.27%; FB1:  88.18  464
+          STRAINS: precision:  90.42%; recall:  92.87%; FB1:  91.63  1138
+----------the best f1 is 0.9332264453456568---------
+Train/loss15.0694424514770521000
+Train/loss12.56723389053344821500
+Train/loss12.4657491912841822000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21294 phrases; correct: 19754. accuracy:  98.28%; precision:  92.77%; recall:  93.71%; FB1:  93.24
+              BEL: precision:  91.20%; recall:  97.04%; FB1:  94.03  216
+              CLA: precision:  64.80%; recall:  65.32%; FB1:  65.06  250
+              COM: precision:  55.56%; recall:  70.18%; FB1:  62.02  72
+              CRO: precision:  95.91%; recall:  96.07%; FB1:  95.99  4354
+              DIS: precision:  97.49%; recall:  97.97%; FB1:  97.73  2871
+             DRUG: precision:  89.18%; recall:  92.06%; FB1:  90.60  2625
+              FER: precision:  90.97%; recall:  96.32%; FB1:  93.57  144
+              ORG: precision:  73.24%; recall:  76.85%; FB1:  75.00  340
+             PART: precision:  89.84%; recall:  88.45%; FB1:  89.14  1663
+              PER: precision:  90.14%; recall:  90.41%; FB1:  90.28  2364
+              PET: precision:  96.38%; recall:  96.66%; FB1:  96.52  4808
+              REA: precision:  85.04%; recall:  91.59%; FB1:  88.19  448
+          STRAINS: precision:  89.46%; recall:  91.97%; FB1:  90.70  1139
+Train/loss12.40162299346923922500
+Train/loss10.03405071258544923000
+Train/loss11.23106497955322223500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21382 phrases; correct: 19774. accuracy:  98.21%; precision:  92.48%; recall:  93.81%; FB1:  93.14
+              BEL: precision:  89.14%; recall:  97.04%; FB1:  92.92  221
+              CLA: precision:  60.15%; recall:  63.31%; FB1:  61.69  261
+              COM: precision:  55.38%; recall:  63.16%; FB1:  59.02  65
+              CRO: precision:  96.38%; recall:  95.51%; FB1:  95.94  4308
+              DIS: precision:  97.12%; recall:  98.00%; FB1:  97.56  2883
+             DRUG: precision:  90.30%; recall:  92.57%; FB1:  91.42  2607
+              FER: precision:  91.61%; recall:  96.32%; FB1:  93.91  143
+              ORG: precision:  72.21%; recall:  77.78%; FB1:  74.89  349
+             PART: precision:  88.14%; recall:  89.28%; FB1:  88.71  1711
+              PER: precision:  89.06%; recall:  90.79%; FB1:  89.92  2403
+              PET: precision:  96.00%; recall:  96.64%; FB1:  96.32  4826
+              REA: precision:  87.39%; recall:  91.59%; FB1:  89.44  436
+          STRAINS: precision:  88.37%; recall:  93.23%; FB1:  90.73  1169
+Train/loss10.75456671905517524000
+Train/loss9.04958010864257824500
+Train/loss10.1404943084716825000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21359 phrases; correct: 19776. accuracy:  98.26%; precision:  92.59%; recall:  93.82%; FB1:  93.20
+              BEL: precision:  89.19%; recall:  97.54%; FB1:  93.18  222
+              CLA: precision:  58.21%; recall:  62.90%; FB1:  60.47  268
+              COM: precision:  60.32%; recall:  66.67%; FB1:  63.33  63
+              CRO: precision:  95.46%; recall:  95.74%; FB1:  95.60  4360
+              DIS: precision:  97.35%; recall:  97.79%; FB1:  97.57  2870
+             DRUG: precision:  92.01%; recall:  91.47%; FB1:  91.74  2528
+              FER: precision:  90.97%; recall:  96.32%; FB1:  93.57  144
+              ORG: precision:  70.94%; recall:  83.64%; FB1:  76.77  382
+             PART: precision:  87.09%; recall:  90.23%; FB1:  88.63  1750
+              PER: precision:  90.00%; recall:  90.54%; FB1:  90.27  2371
+              PET: precision:  96.65%; recall:  96.75%; FB1:  96.70  4799
+              REA: precision:  83.15%; recall:  91.35%; FB1:  87.06  457
+          STRAINS: precision:  89.43%; recall:  92.42%; FB1:  90.90  1145
+Train/loss9.43723606872558625500
+Train/loss7.82185482788085926000
+Train/loss8.56465263366699126500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21292 phrases; correct: 19758. accuracy:  98.24%; precision:  92.80%; recall:  93.73%; FB1:  93.26
+              BEL: precision:  90.78%; recall:  97.04%; FB1:  93.81  217
+              CLA: precision:  64.86%; recall:  58.06%; FB1:  61.28  222
+              COM: precision:  43.40%; recall:  40.35%; FB1:  41.82  53
+              CRO: precision:  95.87%; recall:  96.02%; FB1:  95.94  4354
+              DIS: precision:  97.38%; recall:  97.55%; FB1:  97.46  2862
+             DRUG: precision:  91.20%; recall:  92.92%; FB1:  92.05  2591
+              FER: precision:  89.04%; recall:  95.59%; FB1:  92.20  146
+              ORG: precision:  67.46%; recall:  78.70%; FB1:  72.65  378
+             PART: precision:  90.03%; recall:  89.82%; FB1:  89.92  1685
+              PER: precision:  89.22%; recall:  90.28%; FB1:  89.75  2385
+              PET: precision:  96.37%; recall:  96.79%; FB1:  96.58  4815
+              REA: precision:  86.30%; recall:  90.87%; FB1:  88.52  438
+          STRAINS: precision:  89.18%; recall:  92.24%; FB1:  90.68  1146
+Train/loss8.46570697784423827000
+Train/loss7.46532252502441427500
+Train/loss7.48532353973388728000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21216 phrases; correct: 19734. accuracy:  98.31%; precision:  93.01%; recall:  93.62%; FB1:  93.32
+              BEL: precision:  89.55%; recall:  97.04%; FB1:  93.14  220
+              CLA: precision:  64.89%; recall:  58.87%; FB1:  61.73  225
+              COM: precision:  58.21%; recall:  68.42%; FB1:  62.90  67
+              CRO: precision:  96.00%; recall:  95.63%; FB1:  95.82  4330
+              DIS: precision:  96.98%; recall:  97.86%; FB1:  97.42  2883
+             DRUG: precision:  90.83%; recall:  91.98%; FB1:  91.40  2575
+              FER: precision:  91.61%; recall:  96.32%; FB1:  93.91  143
+              ORG: precision:  72.75%; recall:  79.94%; FB1:  76.18  356
+             PART: precision:  89.92%; recall:  89.22%; FB1:  89.57  1676
+              PER: precision:  89.53%; recall:  90.71%; FB1:  90.12  2388
+              PET: precision:  96.64%; recall:  96.66%; FB1:  96.65  4795
+              REA: precision:  84.92%; recall:  92.07%; FB1:  88.35  451
+          STRAINS: precision:  91.06%; recall:  90.97%; FB1:  91.02  1107
+Train/loss6.72768150329589928500
+Train/loss7.23099199676513729000
+Train/loss6.9069212188720729500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21384 phrases; correct: 19802. accuracy:  98.27%; precision:  92.60%; recall:  93.94%; FB1:  93.27
+              BEL: precision:  90.37%; recall:  97.04%; FB1:  93.59  218
+              CLA: precision:  63.93%; recall:  62.90%; FB1:  63.41  244
+              COM: precision:  68.33%; recall:  71.93%; FB1:  70.09  60
+              CRO: precision:  95.80%; recall:  96.11%; FB1:  95.96  4361
+              DIS: precision:  96.95%; recall:  97.76%; FB1:  97.35  2881
+             DRUG: precision:  90.35%; recall:  92.37%; FB1:  91.35  2600
+              FER: precision:  91.03%; recall:  97.06%; FB1:  93.95  145
+              ORG: precision:  72.53%; recall:  81.48%; FB1:  76.74  364
+             PART: precision:  88.97%; recall:  89.76%; FB1:  89.36  1704
+              PER: precision:  88.68%; recall:  91.09%; FB1:  89.87  2421
+              PET: precision:  96.23%; recall:  96.47%; FB1:  96.35  4806
+              REA: precision:  84.92%; recall:  92.07%; FB1:  88.35  451
+          STRAINS: precision:  90.43%; recall:  92.15%; FB1:  91.28  1129
+Train/loss7.147323734283447530000
+Train/loss5.3272404708862330500
+Train/loss5.8065558166503931000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21293 phrases; correct: 19770. accuracy:  98.27%; precision:  92.85%; recall:  93.79%; FB1:  93.32
+              BEL: precision:  89.55%; recall:  97.04%; FB1:  93.14  220
+              CLA: precision:  60.24%; recall:  61.69%; FB1:  60.96  254
+              COM: precision:  63.49%; recall:  70.18%; FB1:  66.67  63
+              CRO: precision:  95.91%; recall:  95.95%; FB1:  95.93  4349
+              DIS: precision:  96.91%; recall:  97.76%; FB1:  97.33  2882
+             DRUG: precision:  91.58%; recall:  91.55%; FB1:  91.56  2542
+              FER: precision:  89.73%; recall:  96.32%; FB1:  92.91  146
+              ORG: precision:  70.36%; recall:  78.40%; FB1:  74.16  361
+             PART: precision:  89.59%; recall:  89.64%; FB1:  89.61  1690
+              PER: precision:  89.36%; recall:  90.88%; FB1:  90.11  2397
+              PET: precision:  96.51%; recall:  96.87%; FB1:  96.69  4812
+              REA: precision:  84.14%; recall:  91.83%; FB1:  87.82  454
+          STRAINS: precision:  90.92%; recall:  92.15%; FB1:  91.53  1123
+Train/loss5.552793838500976531500
+Train/loss4.69928267669677732000
+Train/loss4.80088055419921832500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21294 phrases; correct: 19809. accuracy:  98.33%; precision:  93.03%; recall:  93.98%; FB1:  93.50
+              BEL: precision:  89.09%; recall:  96.55%; FB1:  92.67  220
+              CLA: precision:  65.82%; recall:  62.90%; FB1:  64.33  237
+              COM: precision:  67.21%; recall:  71.93%; FB1:  69.49  61
+              CRO: precision:  95.95%; recall:  95.86%; FB1:  95.90  4343
+              DIS: precision:  97.29%; recall:  97.86%; FB1:  97.57  2874
+             DRUG: precision:  91.32%; recall:  91.90%; FB1:  91.61  2559
+              FER: precision:  90.97%; recall:  96.32%; FB1:  93.57  144
+              ORG: precision:  74.16%; recall:  81.48%; FB1:  77.65  356
+             PART: precision:  90.01%; recall:  89.58%; FB1:  89.79  1681
+              PER: precision:  89.72%; recall:  91.13%; FB1:  90.42  2394
+              PET: precision:  96.17%; recall:  96.85%; FB1:  96.51  4828
+              REA: precision:  85.90%; recall:  93.75%; FB1:  89.66  454
+          STRAINS: precision:  89.85%; recall:  92.69%; FB1:  91.25  1143
+----------the best f1 is 0.9349821820498904---------
+Train/loss4.69143110656738333000
+Train/loss4.08814271545410233500
+Train/loss4.4418954238891634000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21371 phrases; correct: 19834. accuracy:  98.29%; precision:  92.81%; recall:  94.09%; FB1:  93.45
+              BEL: precision:  87.50%; recall:  96.55%; FB1:  91.80  224
+              CLA: precision:  68.63%; recall:  56.45%; FB1:  61.95  204
+              COM: precision:  68.33%; recall:  71.93%; FB1:  70.09  60
+              CRO: precision:  96.22%; recall:  96.00%; FB1:  96.11  4337
+              DIS: precision:  97.15%; recall:  97.93%; FB1:  97.54  2880
+             DRUG: precision:  91.43%; recall:  91.90%; FB1:  91.67  2556
+              FER: precision:  92.25%; recall:  96.32%; FB1:  94.24  142
+              ORG: precision:  72.93%; recall:  79.01%; FB1:  75.85  351
+             PART: precision:  88.60%; recall:  90.65%; FB1:  89.61  1728
+              PER: precision:  87.99%; recall:  91.98%; FB1:  89.94  2464
+              PET: precision:  96.48%; recall:  96.75%; FB1:  96.61  4807
+              REA: precision:  85.97%; recall:  92.79%; FB1:  89.25  449
+          STRAINS: precision:  88.88%; recall:  93.77%; FB1:  91.26  1169
+Train/loss4.68142012023925834500
+Train/loss3.72956948089599635000
+Train/loss3.87771421051025435500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21244 phrases; correct: 19765. accuracy:  98.30%; precision:  93.04%; recall:  93.77%; FB1:  93.40
+              BEL: precision:  90.74%; recall:  96.55%; FB1:  93.56  216
+              CLA: precision:  54.24%; recall:  64.52%; FB1:  58.93  295
+              COM: precision:  59.70%; recall:  70.18%; FB1:  64.52  67
+              CRO: precision:  96.06%; recall:  96.37%; FB1:  96.21  4361
+              DIS: precision:  96.85%; recall:  96.71%; FB1:  96.78  2853
+             DRUG: precision:  91.09%; recall:  91.31%; FB1:  91.20  2549
+              FER: precision:  90.21%; recall:  94.85%; FB1:  92.47  143
+              ORG: precision:  73.14%; recall:  79.01%; FB1:  75.96  350
+             PART: precision:  90.44%; recall:  89.64%; FB1:  90.04  1674
+              PER: precision:  89.68%; recall:  91.05%; FB1:  90.36  2393
+              PET: precision:  97.08%; recall:  97.02%; FB1:  97.05  4791
+              REA: precision:  88.10%; recall:  92.55%; FB1:  90.27  437
+          STRAINS: precision:  90.94%; recall:  91.52%; FB1:  91.23  1115
+Train/loss3.87453285980224636000
+Train/loss3.057170944213867336500
+Train/loss3.49832832336425837000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21319 phrases; correct: 19845. accuracy:  98.33%; precision:  93.09%; recall:  94.15%; FB1:  93.61
+              BEL: precision:  89.55%; recall:  97.04%; FB1:  93.14  220
+              CLA: precision:  64.52%; recall:  64.52%; FB1:  64.52  248
+              COM: precision:  67.21%; recall:  71.93%; FB1:  69.49  61
+              CRO: precision:  96.21%; recall:  96.43%; FB1:  96.32  4357
+              DIS: precision:  96.81%; recall:  97.83%; FB1:  97.32  2887
+             DRUG: precision:  91.28%; recall:  92.21%; FB1:  91.74  2569
+              FER: precision:  90.28%; recall:  95.59%; FB1:  92.86  144
+              ORG: precision:  72.98%; recall:  80.86%; FB1:  76.72  359
+             PART: precision:  89.52%; recall:  89.99%; FB1:  89.75  1698
+              PER: precision:  90.05%; recall:  90.96%; FB1:  90.50  2381
+              PET: precision:  96.45%; recall:  96.93%; FB1:  96.69  4818
+              REA: precision:  85.81%; recall:  93.03%; FB1:  89.27  451
+          STRAINS: precision:  91.03%; recall:  92.51%; FB1:  91.76  1126
+----------the best f1 is 0.9361290626916364---------
+Train/loss3.678579872131347637500
+Train/loss2.855543281555175638000
+Train/loss2.897522972106933538500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21252 phrases; correct: 19821. accuracy:  98.37%; precision:  93.27%; recall:  94.03%; FB1:  93.65
+              BEL: precision:  89.09%; recall:  96.55%; FB1:  92.67  220
+              CLA: precision:  70.18%; recall:  61.69%; FB1:  65.67  218
+              COM: precision:  63.49%; recall:  70.18%; FB1:  66.67  63
+              CRO: precision:  96.12%; recall:  96.27%; FB1:  96.20  4354
+              DIS: precision:  97.22%; recall:  97.93%; FB1:  97.58  2878
+             DRUG: precision:  91.65%; recall:  91.90%; FB1:  91.77  2550
+              FER: precision:  92.86%; recall:  95.59%; FB1:  94.20  140
+              ORG: precision:  71.87%; recall:  79.63%; FB1:  75.55  359
+             PART: precision:  90.55%; recall:  90.23%; FB1:  90.39  1683
+              PER: precision:  89.94%; recall:  91.01%; FB1:  90.47  2385
+              PET: precision:  96.49%; recall:  97.00%; FB1:  96.74  4819
+              REA: precision:  85.71%; recall:  92.31%; FB1:  88.89  448
+          STRAINS: precision:  89.96%; recall:  92.15%; FB1:  91.04  1135
+----------the best f1 is 0.9364768136826438---------
+Train/loss2.82546632385253939000
+Train/loss2.535639541625976739500
+Train/loss2.45823523712158240000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21367 phrases; correct: 19842. accuracy:  98.30%; precision:  92.86%; recall:  94.13%; FB1:  93.49
+              BEL: precision:  89.14%; recall:  97.04%; FB1:  92.92  221
+              CLA: precision:  66.94%; recall:  66.13%; FB1:  66.53  245
+              COM: precision:  61.19%; recall:  71.93%; FB1:  66.13  67
+              CRO: precision:  95.92%; recall:  96.20%; FB1:  96.06  4360
+              DIS: precision:  96.82%; recall:  97.97%; FB1:  97.39  2891
+             DRUG: precision:  91.27%; recall:  92.06%; FB1:  91.66  2565
+              FER: precision:  91.03%; recall:  97.06%; FB1:  93.95  145
+              ORG: precision:  72.63%; recall:  80.25%; FB1:  76.25  358
+             PART: precision:  89.52%; recall:  90.53%; FB1:  90.02  1708
+              PER: precision:  89.59%; recall:  91.30%; FB1:  90.44  2402
+              PET: precision:  96.30%; recall:  96.75%; FB1:  96.52  4816
+              REA: precision:  84.80%; recall:  92.55%; FB1:  88.51  454
+          STRAINS: precision:  90.04%; recall:  92.24%; FB1:  91.13  1135
+Train/loss2.511034324645996340500
+Train/loss2.17319744873046941000
+Train/loss2.424630783081054741500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21342 phrases; correct: 19848. accuracy:  98.33%; precision:  93.00%; recall:  94.16%; FB1:  93.58
+              BEL: precision:  89.50%; recall:  96.55%; FB1:  92.89  219
+              CLA: precision:  63.49%; recall:  64.52%; FB1:  64.00  252
+              COM: precision:  64.71%; recall:  77.19%; FB1:  70.40  68
+              CRO: precision:  95.91%; recall:  96.48%; FB1:  96.19  4373
+              DIS: precision:  97.32%; recall:  97.79%; FB1:  97.56  2871
+             DRUG: precision:  91.11%; recall:  91.94%; FB1:  91.52  2566
+              FER: precision:  91.03%; recall:  97.06%; FB1:  93.95  145
+              ORG: precision:  72.85%; recall:  81.17%; FB1:  76.79  361
+             PART: precision:  89.59%; recall:  90.17%; FB1:  89.88  1700
+              PER: precision:  90.06%; recall:  90.75%; FB1:  90.41  2375
+              PET: precision:  96.45%; recall:  96.91%; FB1:  96.68  4817
+              REA: precision:  85.00%; recall:  93.99%; FB1:  89.27  460
+          STRAINS: precision:  90.57%; recall:  92.78%; FB1:  91.66  1135
+Train/loss2.001009124755859242000
+Train/loss2.24513235473632842500
+Train/loss2.055575042724609343000
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21330 phrases; correct: 19855. accuracy:  98.33%; precision:  93.08%; recall:  94.19%; FB1:  93.64
+              BEL: precision:  89.91%; recall:  96.55%; FB1:  93.11  218
+              CLA: precision:  65.57%; recall:  64.52%; FB1:  65.04  244
+              COM: precision:  63.24%; recall:  75.44%; FB1:  68.80  68
+              CRO: precision:  96.21%; recall:  96.27%; FB1:  96.24  4350
+              DIS: precision:  97.08%; recall:  97.83%; FB1:  97.45  2879
+             DRUG: precision:  91.48%; recall:  92.10%; FB1:  91.79  2560
+              FER: precision:  92.31%; recall:  97.06%; FB1:  94.62  143
+              ORG: precision:  73.54%; recall:  81.48%; FB1:  77.31  359
+             PART: precision:  90.02%; recall:  90.29%; FB1:  90.16  1694
+              PER: precision:  89.44%; recall:  90.92%; FB1:  90.17  2396
+              PET: precision:  96.35%; recall:  97.02%; FB1:  96.68  4827
+              REA: precision:  86.09%; recall:  93.75%; FB1:  89.76  453
+          STRAINS: precision:  90.34%; recall:  92.87%; FB1:  91.59  1139
+Train/loss2.082014366149902443500
+Train/loss1.947062881469726644000
+Train/loss2.27032099151611344500
+***** Running eval *****
+processed 394558 tokens with 21079 phrases; 
+found: 21300 phrases; correct: 19848. accuracy:  98.34%; precision:  93.18%; recall:  94.16%; FB1:  93.67
+              BEL: precision:  89.91%; recall:  96.55%; FB1:  93.11  218
+              CLA: precision:  66.39%; recall:  64.52%; FB1:  65.44  241
+              COM: precision:  62.69%; recall:  73.68%; FB1:  67.74  67
+              CRO: precision:  96.21%; recall:  96.34%; FB1:  96.28  4353
+              DIS: precision:  97.15%; recall:  97.86%; FB1:  97.51  2878
+             DRUG: precision:  91.38%; recall:  92.10%; FB1:  91.74  2563
+              FER: precision:  90.97%; recall:  96.32%; FB1:  93.57  144
+              ORG: precision:  73.54%; recall:  81.48%; FB1:  77.31  359
+             PART: precision:  89.86%; recall:  90.29%; FB1:  90.08  1697
+              PER: precision:  90.00%; recall:  90.84%; FB1:  90.41  2379
+              PET: precision:  96.51%; recall:  97.02%; FB1:  96.76  4819
+              REA: precision:  85.93%; recall:  93.99%; FB1:  89.78  455
+          STRAINS: precision:  90.59%; recall:  92.15%; FB1:  91.36  1127
+----------the best f1 is 0.9366903419146276---------
+***** Running test *****
+ Num examples = 5985
+ Batch size = 32
+***** Running test *****
+processed 395360 tokens with 21117 phrases; 
+found: 21358 phrases; correct: 19853. accuracy:  98.29%; precision:  92.95%; recall:  94.01%; FB1:  93.48
+              BEL: precision:  92.76%; recall:  98.09%; FB1:  95.35  221
+              CLA: precision:  58.97%; recall:  57.50%; FB1:  58.23  234
+              COM: precision:  55.56%; recall:  81.82%; FB1:  66.18  81
+              CRO: precision:  95.69%; recall:  96.78%; FB1:  96.23  4364
+              DIS: precision:  98.23%; recall:  97.50%; FB1:  97.86  2819
+             DRUG: precision:  91.62%; recall:  92.52%; FB1:  92.07  2660
+              FER: precision:  85.94%; recall:  88.00%; FB1:  86.96  128
+              ORG: precision:  70.03%; recall:  76.79%; FB1:  73.25  307
+             PART: precision:  90.14%; recall:  90.40%; FB1:  90.27  1796
+              PER: precision:  91.96%; recall:  91.92%; FB1:  91.94  2338
+              PET: precision:  96.22%; recall:  96.99%; FB1:  96.61  4661
+              REA: precision:  84.10%; recall:  90.97%; FB1:  87.40  503
+          STRAINS: precision:  86.76%; recall:  90.08%; FB1:  88.39  1246

@@ -1,0 +1,16 @@
+accuracy:  97.74%; precision:  92.04%; recall:  91.72%; FB1:  91.88
+              BIL: precision:  87.50%; recall:  86.42%; FB1:  86.96  160
+              CLA: precision:  63.03%; recall:  33.78%; FB1:  43.99  119
+              COI: precision:  75.24%; recall:  84.95%; FB1:  79.80  105
+              CRO: precision:  94.41%; recall:  96.07%; FB1:  95.23  4094
+              DIS: precision:  98.01%; recall:  96.62%; FB1:  97.31  2769
+             DRUG: precision:  90.20%; recall:  88.20%; FB1:  89.19  2510
+              FIR: precision:  88.70%; recall:  94.44%; FB1:  91.48  115
+              ORG: precision:  78.27%; recall:  78.03%; FB1:  78.15  313
+             PART: precision:  86.29%; recall:  86.44%; FB1:  86.36  1677
+              PIR: precision:  87.40%; recall:  88.57%; FB1:  87.98  2198
+              PIT: precision:  95.48%; recall:  95.72%; FB1:  95.60  4423
+              RIA: precision:  85.91%; recall:  89.00%; FB1:  87.43  433
+          STRAINS: precision:  88.73%; recall:  87.58%; FB1:  88.15  1136
+{'acc': 0.9208543340486052, 'recall': 0.9170559586522214, 'f1': 0.9189512213341301, 'num': 20122}
+{'PART': {'acc': 0.8638, 'recall': 0.8638, 'f1': 0.8638, 'num': 1674}, 'DIS': {'acc': 0.9801, 'recall': 0.9662, 'f1': 0.9731, 'num': 2809}, 'CRO': {'acc': 0.9441, 'recall': 0.9607, 'f1': 0.9523, 'num': 4023}, 'STRAINS': {'acc': 0.8873, 'recall': 0.8758, 'f1': 0.8815, 'num': 1151}, 'PIT': {'acc': 0.9552, 'recall': 0.9572, 'f1': 0.9562, 'num': 4412}, 'PIR': {'acc': 0.8739, 'recall': 0.8852, 'f1': 0.8795, 'num': 2169}, 'DRUG': {'acc': 0.9031, 'recall': 0.882, 'f1': 0.8924, 'num': 2567}, 'BIL': {'acc': 0.8805, 'recall': 0.8642, 'f1': 0.8723, 'num': 162}, 'RIA': {'acc': 0.8591, 'recall': 0.89, 'f1': 0.8743, 'num': 418}, 'CLA': {'acc': 0.6356, 'recall': 0.3378, 'f1': 0.4412, 'num': 222}, 'FIR': {'acc': 0.887, 'recall': 0.9444, 'f1': 0.9148, 'num': 108}, 'ORG': {'acc': 0.7878, 'recall': 0.7803, 'f1': 0.784, 'num': 314}, 'COI': {'acc': 0.7524, 'recall': 0.8495, 'f1': 0.798, 'num': 93}}

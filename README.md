@@ -217,7 +217,7 @@ python  convert_to_pk.py
     conlleval.report(counts)
    ```
 
-# 4 ssAgBERT
+# 4 AgBERT
 Fine-turned BERT for named entity recognition of agricultural diseases and pests was also released in https://github.com/guojson/AgBERT.git
 
 # 5 Thanks

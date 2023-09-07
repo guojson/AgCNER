@@ -1,0 +1,325 @@
+E:\Anaconda3\envs\torch\python.exe E:\guo\NER\bert-crf-token_classification_ner-master\train.py
+num_labels 是30
+E:\guo\NER\bert-crf-token_classification_ner-master\dataset.py:48: FutureWarning: The error_bad_lines argument has been deprecated and will be removed in a future version. Use on_bad_lines in the future.
+
+
+  df = pd.read_csv(file, engine='python', encoding=csv_encoding, error_bad_lines=False)
+====================  Preparing for training  ====================
+	* Loading training data...
+数据集个数为47839
+输入例子
+近年来，稻纵卷叶螟呈暴发趋势，严重影响水稻的生长，给我国农业生产造成巨大损失
+attention_mask
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0])
+input_ids
+tensor([ 101, 6818, 2399, 3341, 8024, 4940, 5288, 1318, 1383,  100, 1439, 3274,
+        1355, 6633, 1232, 8024,  698, 7028, 2512, 1510, 3717, 4940, 4638, 4495,
+        7270, 8024, 5314, 2769, 1744, 1093,  689, 4495,  772, 6863, 2768, 2342,
+        1920, 2938, 1927,  102,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0])
+labels
+tensor([3, 3, 3, 3, 3, 4, 5, 5, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, 7, 3, 3,
+        3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2])
+实际序列转换后的长度为150, 设置最长为150
+E:\guo\NER\bert-crf-token_classification_ner-master\dataset.py:48: FutureWarning: The error_bad_lines argument has been deprecated and will be removed in a future version. Use on_bad_lines in the future.
+
+
+  df = pd.read_csv(file, engine='python', encoding=csv_encoding, error_bad_lines=False)
+数据集个数为5963
+输入例子
+在这些庇护作物上，棉铃虫能在不接触Bt毒蛋白的条件下繁殖
+attention_mask
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0])
+input_ids
+tensor([ 101, 1762, 6821,  763, 2413, 2844,  868, 4289,  677, 8024, 3469, 7190,
+        6001, 5543, 1762,  679, 2970, 6239,  100,  162, 3681, 6028, 4635, 4638,
+        3340,  816,  678, 5246, 3658,  102,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0])
+labels
+tensor([3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+        3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2])
+实际序列转换后的长度为150, 设置最长为150
+E:\guo\NER\bert-crf-token_classification_ner-master\dataset.py:48: FutureWarning: The error_bad_lines argument has been deprecated and will be removed in a future version. Use on_bad_lines in the future.
+
+
+  df = pd.read_csv(file, engine='python', encoding=csv_encoding, error_bad_lines=False)
+数据集个数为5974
+输入例子
+一般先从植株下部叶片开始发病，少数从中部叶片开始发生逐步向上部叶片蔓延
+attention_mask
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0])
+input_ids
+tensor([ 101,  671, 5663, 1044,  794, 3490, 3415,  678, 6956, 1383, 4275, 2458,
+        1993, 1355, 4567, 8024, 2208, 3144,  794,  704, 6956, 1383, 4275, 2458,
+        1993, 1355, 4495, 6852, 3635, 1403,  677, 6956, 1383, 4275, 5913, 2454,
+         102,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0])
+labels
+tensor([ 3,  3,  3,  3,  3,  3,  3,  3,  3, 12, 13,  3,  3,  3,  3,  3,  3,  3,
+         3,  3,  3, 12, 13,  3,  3,  3,  3,  3,  3,  3,  3,  3, 12, 13,  3,  3,
+         3,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,
+         2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,
+         2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,
+         2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,
+         2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,
+         2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,
+         2,  2,  2,  2,  2,  2])
+实际序列转换后的长度为150, 设置最长为150
+	* Loading validation data...
+	* Building model...
+Some weights of the model checkpoint at bert-base-chinese were not used when initializing BertModel: ['cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+E:\Anaconda3\envs\torch\lib\site-packages\transformers\optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+正在对验证集进行测试
+E:\guo\NER\bert-crf-token_classification_ner-master\model.py:246: UserWarning: where received a uint8 condition tensor. This behavior is deprecated and will be removed in a future version of PyTorch. Use a boolean condition instead. (Triggered internally at  C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\TensorCompare.cpp:402.)
+  score = torch.where(mask[i].unsqueeze(1), next_score, score)
+{'acc': 0.00012023566189731875, 'recall': 0.0009372533543804262, 'f1': 0.0002131299251240921, 'num': 20272}
+{'CRO': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 4239}, 'DIS': {'acc': 0.0003, 'recall': 0.0011, 'f1': 0.0005, 'num': 2704}, 'RIA': {'acc': 0.0005, 'recall': 0.0114, 'f1': 0.001, 'num': 438}, 'CLA': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 232}, 'STRAINS': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 1093}, 'COI': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 64}, 'DRUG': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 2615}, 'PIT': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 4493}, 'PIR': {'acc': 0.0006, 'recall': 0.0029, 'f1': 0.001, 'num': 2098}, 'PART': {'acc': 0.0008, 'recall': 0.0029, 'f1': 0.0012, 'num': 1711}, 'BIL': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 195}, 'ORG': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 313}, 'FIR': {'acc': 0.0, 'recall': 0.0, 'f1': 0.0, 'num': 77}}
+before train-> Valid. time: 20.5530s, loss: 209.6470, f1_score: 0.0213%
+
+
+ ==================== Training model on device: cuda:0 ====================
+* Training epoch 1:
+loss:3.378119468688965: 100%|██████████| 1495/1495 [09:21<00:00,  2.66it/s]
+-> Training time: 561.8119s, loss = 5.8651, accuracy:
+* Validation for epoch 1:
+正在对验证集进行测试
+{'acc': 0.922296622026784, 'recall': 0.9104676400947119, 'f1': 0.9163439578989178, 'num': 20272}
+{'STRAINS': {'acc': 0.9004, 'recall': 0.8353, 'f1': 0.8666, 'num': 1093}, 'CRO': {'acc': 0.9372, 'recall': 0.9547, 'f1': 0.9459, 'num': 4239}, 'DIS': {'acc': 0.9702, 'recall': 0.9752, 'f1': 0.9727, 'num': 2704}, 'PIT': {'acc': 0.9556, 'recall': 0.9537, 'f1': 0.9547, 'num': 4493}, 'PIR': {'acc': 0.8653, 'recall': 0.888, 'f1': 0.8765, 'num': 2098}, 'PART': {'acc': 0.8779, 'recall': 0.8866, 'f1': 0.8822, 'num': 1711}, 'RIA': {'acc': 0.8615, 'recall': 0.8379, 'f1': 0.8495, 'num': 438}, 'DRUG': {'acc': 0.9263, 'recall': 0.8704, 'f1': 0.8975, 'num': 2615}, 'ORG': {'acc': 0.7296, 'recall': 0.7412, 'f1': 0.7353, 'num': 313}, 'CLA': {'acc': 0.75, 'recall': 0.0647, 'f1': 0.119, 'num': 232}, 'FIR': {'acc': 0.7093, 'recall': 0.7922, 'f1': 0.7485, 'num': 77}, 'BIL': {'acc': 0.9, 'recall': 0.9692, 'f1': 0.9333, 'num': 195}, 'COI': {'acc': 0.6875, 'recall': 0.8594, 'f1': 0.7639, 'num': 64}}
+-> Valid. time: 31.7450s, loss: 2.9318, f1_score: 91.6344%
+
+save model
+* Training epoch 2:
+loss:1.2425615787506104: 100%|██████████| 1495/1495 [09:27<00:00,  2.64it/s]
+-> Training time: 567.0921s, loss = 2.1831, accuracy:
+* Validation for epoch 2:
+正在对验证集进行测试
+{'acc': 0.928128078817734, 'recall': 0.9294100236779794, 'f1': 0.9287686088928324, 'num': 20272}
+{'PIT': {'acc': 0.9658, 'recall': 0.9553, 'f1': 0.9605, 'num': 4493}, 'PIR': {'acc': 0.8906, 'recall': 0.908, 'f1': 0.8992, 'num': 2098}, 'CRO': {'acc': 0.9437, 'recall': 0.9644, 'f1': 0.9539, 'num': 4239}, 'DRUG': {'acc': 0.9234, 'recall': 0.9033, 'f1': 0.9132, 'num': 2615}, 'DIS': {'acc': 0.975, 'recall': 0.98, 'f1': 0.9775, 'num': 2704}, 'PART': {'acc': 0.8968, 'recall': 0.9036, 'f1': 0.9001, 'num': 1711}, 'CLA': {'acc': 0.75, 'recall': 0.2716, 'f1': 0.3987, 'num': 232}, 'ORG': {'acc': 0.6958, 'recall': 0.7891, 'f1': 0.7395, 'num': 313}, 'STRAINS': {'acc': 0.9091, 'recall': 0.8875, 'f1': 0.8981, 'num': 1093}, 'RIA': {'acc': 0.806, 'recall': 0.9201, 'f1': 0.8593, 'num': 438}, 'BIL': {'acc': 0.9261, 'recall': 0.9641, 'f1': 0.9447, 'num': 195}, 'COI': {'acc': 0.686, 'recall': 0.9219, 'f1': 0.7867, 'num': 64}, 'FIR': {'acc': 0.7556, 'recall': 0.8831, 'f1': 0.8144, 'num': 77}}
+-> Valid. time: 30.9760s, loss: 1.9661, f1_score: 92.8769%
+
+save model
+  0%|          | 0/1495 [00:00<?, ?it/s]* Training epoch 3:
+loss:0.763759970664978: 100%|██████████| 1495/1495 [09:26<00:00,  2.64it/s]
+-> Training time: 566.9399s, loss = 1.3668, accuracy:
+* Validation for epoch 3:
+正在对验证集进行测试
+{'acc': 0.9230279898218829, 'recall': 0.9304952644041041, 'f1': 0.9267465854377518, 'num': 20272}
+{'DIS': {'acc': 0.974, 'recall': 0.983, 'f1': 0.9785, 'num': 2704}, 'BIL': {'acc': 0.9397, 'recall': 0.959, 'f1': 0.9492, 'num': 195}, 'CRO': {'acc': 0.9539, 'recall': 0.9658, 'f1': 0.9598, 'num': 4239}, 'PART': {'acc': 0.8782, 'recall': 0.9018, 'f1': 0.8899, 'num': 1711}, 'PIT': {'acc': 0.9406, 'recall': 0.9691, 'f1': 0.9546, 'num': 4493}, 'PIR': {'acc': 0.921, 'recall': 0.878, 'f1': 0.899, 'num': 2098}, 'DRUG': {'acc': 0.9291, 'recall': 0.9025, 'f1': 0.9156, 'num': 2615}, 'STRAINS': {'acc': 0.9205, 'recall': 0.8371, 'f1': 0.8769, 'num': 1093}, 'ORG': {'acc': 0.6875, 'recall': 0.7732, 'f1': 0.7278, 'num': 313}, 'CLA': {'acc': 0.4982, 'recall': 0.6078, 'f1': 0.5476, 'num': 232}, 'RIA': {'acc': 0.8279, 'recall': 0.9224, 'f1': 0.8726, 'num': 438}, 'FIR': {'acc': 0.7558, 'recall': 0.8442, 'f1': 0.7975, 'num': 77}, 'COI': {'acc': 0.6667, 'recall': 0.9062, 'f1': 0.7682, 'num': 64}}
+-> Valid. time: 30.7896s, loss: 1.9052, f1_score: 92.6747%
+
+* Training epoch 4:
+loss:0.4208871126174927: 100%|██████████| 1495/1495 [09:29<00:00,  2.63it/s]
+-> Training time: 569.0676s, loss = 0.9280, accuracy:
+* Validation for epoch 4:
+正在对验证集进行测试
+{'acc': 0.9293504962169599, 'recall': 0.9331097079715864, 'f1': 0.9312263082754887, 'num': 20272}
+{'PIR': {'acc': 0.8979, 'recall': 0.9051, 'f1': 0.9015, 'num': 2098}, 'PIT': {'acc': 0.9641, 'recall': 0.9624, 'f1': 0.9632, 'num': 4493}, 'BIL': {'acc': 0.922, 'recall': 0.9692, 'f1': 0.945, 'num': 195}, 'DRUG': {'acc': 0.923, 'recall': 0.9174, 'f1': 0.9202, 'num': 2615}, 'CRO': {'acc': 0.9579, 'recall': 0.9554, 'f1': 0.9567, 'num': 4239}, 'DIS': {'acc': 0.9736, 'recall': 0.9808, 'f1': 0.9772, 'num': 2704}, 'PART': {'acc': 0.9021, 'recall': 0.9047, 'f1': 0.9034, 'num': 1711}, 'CLA': {'acc': 0.6829, 'recall': 0.3621, 'f1': 0.4732, 'num': 232}, 'STRAINS': {'acc': 0.8542, 'recall': 0.9167, 'f1': 0.8844, 'num': 1093}, 'RIA': {'acc': 0.8973, 'recall': 0.8973, 'f1': 0.8973, 'num': 438}, 'ORG': {'acc': 0.6537, 'recall': 0.8083, 'f1': 0.7229, 'num': 313}, 'COI': {'acc': 0.725, 'recall': 0.9062, 'f1': 0.8056, 'num': 64}, 'FIR': {'acc': 0.8025, 'recall': 0.8442, 'f1': 0.8228, 'num': 77}}
+-> Valid. time: 30.5542s, loss: 1.7086, f1_score: 93.1226%
+
+save model
+* Training epoch 5:
+loss:1.1757463216781616: 100%|██████████| 1495/1495 [09:24<00:00,  2.65it/s]
+-> Training time: 564.1458s, loss = 0.6986, accuracy:
+* Validation for epoch 5:
+正在对验证集进行测试
+{'acc': 0.9366329766151407, 'recall': 0.932567087608524, 'f1': 0.9345956100454814, 'num': 20272}
+{'CRO': {'acc': 0.9611, 'recall': 0.9623, 'f1': 0.9617, 'num': 4239}, 'PIT': {'acc': 0.9658, 'recall': 0.9693, 'f1': 0.9676, 'num': 4493}, 'DRUG': {'acc': 0.9299, 'recall': 0.9136, 'f1': 0.9217, 'num': 2615}, 'PART': {'acc': 0.9154, 'recall': 0.8977, 'f1': 0.9065, 'num': 1711}, 'PIR': {'acc': 0.9001, 'recall': 0.8932, 'f1': 0.8967, 'num': 2098}, 'DIS': {'acc': 0.9807, 'recall': 0.9771, 'f1': 0.9789, 'num': 2704}, 'RIA': {'acc': 0.875, 'recall': 0.911, 'f1': 0.8926, 'num': 438}, 'STRAINS': {'acc': 0.9058, 'recall': 0.8801, 'f1': 0.8928, 'num': 1093}, 'BIL': {'acc': 0.9307, 'recall': 0.9641, 'f1': 0.9471, 'num': 195}, 'ORG': {'acc': 0.724, 'recall': 0.7796, 'f1': 0.7508, 'num': 313}, 'CLA': {'acc': 0.6201, 'recall': 0.4784, 'f1': 0.5401, 'num': 232}, 'FIR': {'acc': 0.7473, 'recall': 0.8831, 'f1': 0.8095, 'num': 77}, 'COI': {'acc': 0.716, 'recall': 0.9062, 'f1': 0.8, 'num': 64}}
+-> Valid. time: 30.5722s, loss: 1.7560, f1_score: 93.4596%
+
+save model
+* Training epoch 6:
+loss:0.2535507380962372: 100%|██████████| 1495/1495 [09:26<00:00,  2.64it/s]
+-> Training time: 566.1021s, loss = 0.5578, accuracy:
+* Validation for epoch 6:
+正在对验证集进行测试
+{'acc': 0.9330675722230425, 'recall': 0.9352308602999211, 'f1': 0.9341479638343476, 'num': 20272}
+{'CRO': {'acc': 0.961, 'recall': 0.9587, 'f1': 0.9598, 'num': 4239}, 'DIS': {'acc': 0.9814, 'recall': 0.9745, 'f1': 0.9779, 'num': 2704}, 'PIT': {'acc': 0.968, 'recall': 0.9697, 'f1': 0.9689, 'num': 4493}, 'DRUG': {'acc': 0.9183, 'recall': 0.9197, 'f1': 0.919, 'num': 2615}, 'ORG': {'acc': 0.7011, 'recall': 0.7796, 'f1': 0.7383, 'num': 313}, 'PIR': {'acc': 0.8883, 'recall': 0.9247, 'f1': 0.9061, 'num': 2098}, 'CLA': {'acc': 0.7647, 'recall': 0.3362, 'f1': 0.4671, 'num': 232}, 'PART': {'acc': 0.8914, 'recall': 0.9117, 'f1': 0.9015, 'num': 1711}, 'STRAINS': {'acc': 0.9147, 'recall': 0.8728, 'f1': 0.8933, 'num': 1093}, 'RIA': {'acc': 0.8518, 'recall': 0.9315, 'f1': 0.8899, 'num': 438}, 'BIL': {'acc': 0.922, 'recall': 0.9692, 'f1': 0.945, 'num': 195}, 'COI': {'acc': 0.6782, 'recall': 0.9219, 'f1': 0.7815, 'num': 64}, 'FIR': {'acc': 0.7586, 'recall': 0.8571, 'f1': 0.8049, 'num': 77}}
+-> Valid. time: 30.4738s, loss: 2.0001, f1_score: 93.4148%
+
+* Training epoch 7:
+loss:0.6816478371620178: 100%|██████████| 1495/1495 [09:31<00:00,  2.62it/s]
+-> Training time: 571.2994s, loss = 0.4205, accuracy:
+* Validation for epoch 7:
+正在对验证集进行测试
+{'acc': 0.928536537710043, 'recall': 0.937697316495659, 'f1': 0.9330944433536226, 'num': 20272}
+{'PIT': {'acc': 0.9673, 'recall': 0.9666, 'f1': 0.9669, 'num': 4493}, 'DRUG': {'acc': 0.921, 'recall': 0.9182, 'f1': 0.9196, 'num': 2615}, 'PIR': {'acc': 0.9233, 'recall': 0.8951, 'f1': 0.909, 'num': 2098}, 'PART': {'acc': 0.9028, 'recall': 0.9123, 'f1': 0.9076, 'num': 1711}, 'CRO': {'acc': 0.9611, 'recall': 0.9608, 'f1': 0.961, 'num': 4239}, 'DIS': {'acc': 0.9683, 'recall': 0.973, 'f1': 0.9707, 'num': 2704}, 'BIL': {'acc': 0.922, 'recall': 0.9692, 'f1': 0.945, 'num': 195}, 'RIA': {'acc': 0.8775, 'recall': 0.9155, 'f1': 0.8961, 'num': 438}, 'STRAINS': {'acc': 0.8075, 'recall': 0.9442, 'f1': 0.8705, 'num': 1093}, 'FIR': {'acc': 0.7882, 'recall': 0.8701, 'f1': 0.8272, 'num': 77}, 'CLA': {'acc': 0.6337, 'recall': 0.5517, 'f1': 0.5899, 'num': 232}, 'ORG': {'acc': 0.711, 'recall': 0.7859, 'f1': 0.7466, 'num': 313}, 'COI': {'acc': 0.7024, 'recall': 0.9219, 'f1': 0.7973, 'num': 64}}
+-> Valid. time: 30.3338s, loss: 2.0366, f1_score: 93.3094%
+
+* Training epoch 8:
+loss:0.8896763324737549: 100%|██████████| 1495/1495 [09:24<00:00,  2.65it/s]
+-> Training time: 564.3728s, loss = 0.3052, accuracy:
+* Validation for epoch 8:
+正在对验证集进行测试
+{'acc': 0.9353211907559734, 'recall': 0.9423342541436464, 'f1': 0.9388146255160214, 'num': 20272}
+{'DRUG': {'acc': 0.9325, 'recall': 0.9197, 'f1': 0.9261, 'num': 2615}, 'CLA': {'acc': 0.6893, 'recall': 0.5259, 'f1': 0.5966, 'num': 232}, 'CRO': {'acc': 0.9598, 'recall': 0.9696, 'f1': 0.9647, 'num': 4239}, 'DIS': {'acc': 0.9722, 'recall': 0.9822, 'f1': 0.9772, 'num': 2704}, 'PIT': {'acc': 0.9694, 'recall': 0.9724, 'f1': 0.9709, 'num': 4493}, 'PIR': {'acc': 0.8957, 'recall': 0.9252, 'f1': 0.9102, 'num': 2098}, 'RIA': {'acc': 0.8772, 'recall': 0.8973, 'f1': 0.8871, 'num': 438}, 'STRAINS': {'acc': 0.8814, 'recall': 0.9177, 'f1': 0.8991, 'num': 1093}, 'ORG': {'acc': 0.734, 'recall': 0.7316, 'f1': 0.7328, 'num': 313}, 'PART': {'acc': 0.915, 'recall': 0.9117, 'f1': 0.9133, 'num': 1711}, 'BIL': {'acc': 0.9265, 'recall': 0.9692, 'f1': 0.9474, 'num': 195}, 'COI': {'acc': 0.6628, 'recall': 0.8906, 'f1': 0.76, 'num': 64}, 'FIR': {'acc': 0.7931, 'recall': 0.8961, 'f1': 0.8415, 'num': 77}}
+-> Valid. time: 30.8577s, loss: 2.1551, f1_score: 93.8815%
+
+save model
+* Training epoch 9:
+loss:0.5629163980484009: 100%|██████████| 1495/1495 [09:27<00:00,  2.63it/s]
+-> Training time: 567.4759s, loss = 0.2515, accuracy:
+* Validation for epoch 9:
+正在对验证集进行测试
+{'acc': 0.9342085853370704, 'recall': 0.9372040252565115, 'f1': 0.9357039080006896, 'num': 20272}
+{'CRO': {'acc': 0.9585, 'recall': 0.9599, 'f1': 0.9592, 'num': 4239}, 'PIT': {'acc': 0.9682, 'recall': 0.9688, 'f1': 0.9685, 'num': 4493}, 'DRUG': {'acc': 0.9204, 'recall': 0.9239, 'f1': 0.9221, 'num': 2615}, 'PIR': {'acc': 0.9208, 'recall': 0.8975, 'f1': 0.909, 'num': 2098}, 'PART': {'acc': 0.9027, 'recall': 0.9059, 'f1': 0.9043, 'num': 1711}, 'BIL': {'acc': 0.9403, 'recall': 0.9692, 'f1': 0.9545, 'num': 195}, 'ORG': {'acc': 0.7226, 'recall': 0.7572, 'f1': 0.7395, 'num': 313}, 'DIS': {'acc': 0.976, 'recall': 0.9771, 'f1': 0.9765, 'num': 2704}, 'CLA': {'acc': 0.6347, 'recall': 0.5991, 'f1': 0.6164, 'num': 232}, 'RIA': {'acc': 0.8547, 'recall': 0.9269, 'f1': 0.8894, 'num': 438}, 'STRAINS': {'acc': 0.8843, 'recall': 0.9094, 'f1': 0.8967, 'num': 1093}, 'COI': {'acc': 0.7222, 'recall': 0.8125, 'f1': 0.7647, 'num': 64}, 'FIR': {'acc': 0.8313, 'recall': 0.8961, 'f1': 0.8625, 'num': 77}}
+-> Valid. time: 30.4476s, loss: 2.2845, f1_score: 93.5704%
+
+* Training epoch 10:
+loss:0.7352766990661621: 100%|██████████| 1495/1495 [09:24<00:00,  2.65it/s]
+-> Training time: 564.7159s, loss = 0.2756, accuracy:
+* Validation for epoch 10:
+正在对验证集进行测试
+{'acc': 0.9296296296296296, 'recall': 0.9410023677979479, 'f1': 0.9352814277309277, 'num': 20272}
+{'CLA': {'acc': 0.5792, 'recall': 0.5991, 'f1': 0.589, 'num': 232}, 'DIS': {'acc': 0.973, 'recall': 0.9734, 'f1': 0.9732, 'num': 2704}, 'PIR': {'acc': 0.9015, 'recall': 0.9161, 'f1': 0.9087, 'num': 2098}, 'PIT': {'acc': 0.9652, 'recall': 0.97, 'f1': 0.9676, 'num': 4493}, 'CRO': {'acc': 0.9676, 'recall': 0.9651, 'f1': 0.9663, 'num': 4239}, 'RIA': {'acc': 0.8813, 'recall': 0.9155, 'f1': 0.8981, 'num': 438}, 'PART': {'acc': 0.9003, 'recall': 0.9082, 'f1': 0.9043, 'num': 1711}, 'DRUG': {'acc': 0.9248, 'recall': 0.9266, 'f1': 0.9257, 'num': 2615}, 'ORG': {'acc': 0.6463, 'recall': 0.8115, 'f1': 0.7195, 'num': 313}, 'STRAINS': {'acc': 0.8674, 'recall': 0.9277, 'f1': 0.8966, 'num': 1093}, 'BIL': {'acc': 0.9356, 'recall': 0.9692, 'f1': 0.9521, 'num': 195}, 'COI': {'acc': 0.6875, 'recall': 0.5156, 'f1': 0.5893, 'num': 64}, 'FIR': {'acc': 0.7586, 'recall': 0.8571, 'f1': 0.8049, 'num': 77}}
+-> Valid. time: 30.4466s, loss: 2.7211, f1_score: 93.5281%
+
+* Training epoch 11:
+loss:0.48316216468811035: 100%|██████████| 1495/1495 [09:26<00:00,  2.64it/s]
+-> Training time: 566.5797s, loss = 0.2807, accuracy:
+* Validation for epoch 11:
+正在对验证集进行测试
+{'acc': 0.9345472440944882, 'recall': 0.9367600631412786, 'f1': 0.9356523452897122, 'num': 20272}
+{'DRUG': {'acc': 0.9168, 'recall': 0.9101, 'f1': 0.9135, 'num': 2615}, 'DIS': {'acc': 0.9785, 'recall': 0.9771, 'f1': 0.9778, 'num': 2704}, 'PIR': {'acc': 0.9047, 'recall': 0.9099, 'f1': 0.9073, 'num': 2098}, 'CRO': {'acc': 0.9641, 'recall': 0.9627, 'f1': 0.9634, 'num': 4239}, 'PART': {'acc': 0.9055, 'recall': 0.9077, 'f1': 0.9066, 'num': 1711}, 'PIT': {'acc': 0.9688, 'recall': 0.9671, 'f1': 0.9679, 'num': 4493}, 'CLA': {'acc': 0.6722, 'recall': 0.5216, 'f1': 0.5874, 'num': 232}, 'ORG': {'acc': 0.7077, 'recall': 0.7891, 'f1': 0.7462, 'num': 313}, 'STRAINS': {'acc': 0.8925, 'recall': 0.9113, 'f1': 0.9018, 'num': 1093}, 'RIA': {'acc': 0.8602, 'recall': 0.9269, 'f1': 0.8923, 'num': 438}, 'COI': {'acc': 0.7089, 'recall': 0.875, 'f1': 0.7832, 'num': 64}, 'BIL': {'acc': 0.9303, 'recall': 0.959, 'f1': 0.9444, 'num': 195}, 'FIR': {'acc': 0.7976, 'recall': 0.8701, 'f1': 0.8323, 'num': 77}}
+-> Valid. time: 30.5709s, loss: 2.4345, f1_score: 93.5652%
+
+E:\guo\NER\bert-crf-token_classification_ner-master\utils.py:724: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  plt.figure()
+* Training epoch 12:
+loss:0.18221552670001984: 100%|██████████| 1495/1495 [09:23<00:00,  2.65it/s]
+-> Training time: 563.8819s, loss = 0.3055, accuracy:
+* Validation for epoch 12:
+正在对验证集进行测试
+{'acc': 0.9366727353245092, 'recall': 0.9390292028413575, 'f1': 0.9378494888533071, 'num': 20272}
+{'PIT': {'acc': 0.9695, 'recall': 0.9704, 'f1': 0.97, 'num': 4493}, 'CRO': {'acc': 0.9635, 'recall': 0.9663, 'f1': 0.9649, 'num': 4239}, 'PART': {'acc': 0.9021, 'recall': 0.9106, 'f1': 0.9063, 'num': 1711}, 'DRUG': {'acc': 0.9337, 'recall': 0.9151, 'f1': 0.9243, 'num': 2615}, 'DIS': {'acc': 0.9706, 'recall': 0.9782, 'f1': 0.9744, 'num': 2704}, 'PIR': {'acc': 0.8959, 'recall': 0.9228, 'f1': 0.9091, 'num': 2098}, 'ORG': {'acc': 0.7434, 'recall': 0.722, 'f1': 0.7326, 'num': 313}, 'BIL': {'acc': 0.9347, 'recall': 0.9538, 'f1': 0.9442, 'num': 195}, 'RIA': {'acc': 0.8753, 'recall': 0.9292, 'f1': 0.9014, 'num': 438}, 'STRAINS': {'acc': 0.9099, 'recall': 0.9058, 'f1': 0.9078, 'num': 1093}, 'CLA': {'acc': 0.6524, 'recall': 0.5259, 'f1': 0.5823, 'num': 232}, 'COI': {'acc': 0.7027, 'recall': 0.8125, 'f1': 0.7536, 'num': 64}, 'FIR': {'acc': 0.7927, 'recall': 0.8442, 'f1': 0.8176, 'num': 77}}
+-> Valid. time: 30.7159s, loss: 2.2679, f1_score: 93.7849%
+
+* Training epoch 13:
+loss:0.4679151773452759: 100%|██████████| 1495/1495 [09:22<00:00,  2.66it/s]
+-> Training time: 562.0182s, loss = 0.3899, accuracy:
+* Validation for epoch 13:
+正在对验证集进行测试
+{'acc': 0.9338624338624338, 'recall': 0.9403117600631413, 'f1': 0.937076000393275, 'num': 20272}
+{'PIT': {'acc': 0.9652, 'recall': 0.9695, 'f1': 0.9674, 'num': 4493}, 'PIR': {'acc': 0.8972, 'recall': 0.9276, 'f1': 0.9121, 'num': 2098}, 'FIR': {'acc': 0.7907, 'recall': 0.8831, 'f1': 0.8344, 'num': 77}, 'DIS': {'acc': 0.9781, 'recall': 0.9756, 'f1': 0.9769, 'num': 2704}, 'PART': {'acc': 0.9111, 'recall': 0.9164, 'f1': 0.9138, 'num': 1711}, 'CRO': {'acc': 0.9608, 'recall': 0.9707, 'f1': 0.9657, 'num': 4239}, 'STRAINS': {'acc': 0.8667, 'recall': 0.9277, 'f1': 0.8962, 'num': 1093}, 'DRUG': {'acc': 0.9227, 'recall': 0.9128, 'f1': 0.9177, 'num': 2615}, 'CLA': {'acc': 0.6452, 'recall': 0.5172, 'f1': 0.5742, 'num': 232}, 'RIA': {'acc': 0.9144, 'recall': 0.9018, 'f1': 0.908, 'num': 438}, 'ORG': {'acc': 0.7387, 'recall': 0.6773, 'f1': 0.7067, 'num': 313}, 'BIL': {'acc': 0.9353, 'recall': 0.9641, 'f1': 0.9495, 'num': 195}, 'COI': {'acc': 0.6875, 'recall': 0.8594, 'f1': 0.7639, 'num': 64}}
+-> Valid. time: 30.3685s, loss: 2.2421, f1_score: 93.7076%
+
+* Training epoch 14:
+loss:0.3737083971500397: 100%|██████████| 1495/1495 [09:24<00:00,  2.65it/s]
+-> Training time: 564.4547s, loss = 0.4907, accuracy:
+* Validation for epoch 14:
+正在对验证集进行测试
+{'acc': 0.9376045664796772, 'recall': 0.9399171270718232, 'f1': 0.9387594225747647, 'num': 20272}
+{'DRUG': {'acc': 0.9309, 'recall': 0.9174, 'f1': 0.9241, 'num': 2615}, 'DIS': {'acc': 0.9778, 'recall': 0.9767, 'f1': 0.9772, 'num': 2704}, 'CRO': {'acc': 0.9622, 'recall': 0.967, 'f1': 0.9646, 'num': 4239}, 'PIT': {'acc': 0.97, 'recall': 0.97, 'f1': 0.97, 'num': 4493}, 'STRAINS': {'acc': 0.8832, 'recall': 0.9131, 'f1': 0.8979, 'num': 1093}, 'PIR': {'acc': 0.9107, 'recall': 0.9137, 'f1': 0.9122, 'num': 2098}, 'PART': {'acc': 0.9083, 'recall': 0.9147, 'f1': 0.9115, 'num': 1711}, 'RIA': {'acc': 0.8911, 'recall': 0.9155, 'f1': 0.9032, 'num': 438}, 'BIL': {'acc': 0.9303, 'recall': 0.959, 'f1': 0.9444, 'num': 195}, 'ORG': {'acc': 0.7351, 'recall': 0.7891, 'f1': 0.7612, 'num': 313}, 'FIR': {'acc': 0.7907, 'recall': 0.8831, 'f1': 0.8344, 'num': 77}, 'COI': {'acc': 0.7308, 'recall': 0.8906, 'f1': 0.8028, 'num': 64}, 'CLA': {'acc': 0.6429, 'recall': 0.5043, 'f1': 0.5652, 'num': 232}}
+-> Valid. time: 30.6354s, loss: 2.1594, f1_score: 93.8759%
+
+  0%|          | 0/1495 [00:00<?, ?it/s]* Training epoch 15:
+loss:1.1458543539047241: 100%|██████████| 1495/1495 [09:24<00:00,  2.65it/s]
+-> Training time: 564.6563s, loss = 0.6072, accuracy:
+* Validation for epoch 15:
+正在对验证集进行测试
+{'acc': 0.9334050459612752, 'recall': 0.9416929755327546, 'f1': 0.9375306944308026, 'num': 20272}
+{'PIT': {'acc': 0.9636, 'recall': 0.9726, 'f1': 0.9681, 'num': 4493}, 'PIR': {'acc': 0.9059, 'recall': 0.9228, 'f1': 0.9143, 'num': 2098}, 'DRUG': {'acc': 0.9243, 'recall': 0.9151, 'f1': 0.9197, 'num': 2615}, 'CRO': {'acc': 0.9618, 'recall': 0.9674, 'f1': 0.9646, 'num': 4239}, 'PART': {'acc': 0.8993, 'recall': 0.9182, 'f1': 0.9086, 'num': 1711}, 'DIS': {'acc': 0.9757, 'recall': 0.9786, 'f1': 0.9771, 'num': 2704}, 'FIR': {'acc': 0.7907, 'recall': 0.8831, 'f1': 0.8344, 'num': 77}, 'BIL': {'acc': 0.9353, 'recall': 0.9641, 'f1': 0.9495, 'num': 195}, 'COI': {'acc': 0.7, 'recall': 0.875, 'f1': 0.7778, 'num': 64}, 'RIA': {'acc': 0.8874, 'recall': 0.9178, 'f1': 0.9024, 'num': 438}, 'CLA': {'acc': 0.6705, 'recall': 0.5, 'f1': 0.5728, 'num': 232}, 'STRAINS': {'acc': 0.8738, 'recall': 0.9186, 'f1': 0.8956, 'num': 1093}, 'ORG': {'acc': 0.7331, 'recall': 0.7636, 'f1': 0.748, 'num': 313}}
+-> Valid. time: 30.6245s, loss: 2.2124, f1_score: 93.7531%
+
+* Training epoch 16:
+loss:0.42219001054763794: 100%|██████████| 1495/1495 [09:26<00:00,  2.64it/s]
+-> Training time: 566.9415s, loss = 0.6920, accuracy:
+* Validation for epoch 16:
+正在对验证集进行测试
+{'acc': 0.9341705091729618, 'recall': 0.9394238358326756, 'f1': 0.9367898076639284, 'num': 20272}
+{'COI': {'acc': 0.7333, 'recall': 0.8594, 'f1': 0.7914, 'num': 64}, 'DRUG': {'acc': 0.9241, 'recall': 0.9128, 'f1': 0.9184, 'num': 2615}, 'CLA': {'acc': 0.6484, 'recall': 0.5086, 'f1': 0.57, 'num': 232}, 'DIS': {'acc': 0.9753, 'recall': 0.9778, 'f1': 0.9765, 'num': 2704}, 'CRO': {'acc': 0.9647, 'recall': 0.966, 'f1': 0.9653, 'num': 4239}, 'PIR': {'acc': 0.9001, 'recall': 0.919, 'f1': 0.9094, 'num': 2098}, 'PIT': {'acc': 0.9662, 'recall': 0.9722, 'f1': 0.9692, 'num': 4493}, 'PART': {'acc': 0.9087, 'recall': 0.9071, 'f1': 0.9079, 'num': 1711}, 'BIL': {'acc': 0.9356, 'recall': 0.9692, 'f1': 0.9521, 'num': 195}, 'STRAINS': {'acc': 0.866, 'recall': 0.9167, 'f1': 0.8907, 'num': 1093}, 'ORG': {'acc': 0.7216, 'recall': 0.77, 'f1': 0.745, 'num': 313}, 'RIA': {'acc': 0.9029, 'recall': 0.9132, 'f1': 0.9081, 'num': 438}, 'FIR': {'acc': 0.7831, 'recall': 0.8442, 'f1': 0.8125, 'num': 77}}
+-> Valid. time: 30.6791s, loss: 2.2470, f1_score: 93.6790%
+
+* Training epoch 17:
+loss:0.8641632795333862: 100%|██████████| 1495/1495 [09:32<00:00,  2.61it/s]
+-> Training time: 572.0098s, loss = 0.7895, accuracy:
+* Validation for epoch 17:
+正在对验证集进行测试
+{'acc': 0.93440612274935, 'recall': 0.9395224940805051, 'f1': 0.9369573238224082, 'num': 20272}
+{'DRUG': {'acc': 0.9268, 'recall': 0.9147, 'f1': 0.9207, 'num': 2615}, 'PIT': {'acc': 0.963, 'recall': 0.9733, 'f1': 0.9681, 'num': 4493}, 'PIR': {'acc': 0.9113, 'recall': 0.9156, 'f1': 0.9135, 'num': 2098}, 'CRO': {'acc': 0.9646, 'recall': 0.9632, 'f1': 0.9639, 'num': 4239}, 'DIS': {'acc': 0.9771, 'recall': 0.9782, 'f1': 0.9776, 'num': 2704}, 'PART': {'acc': 0.9131, 'recall': 0.9024, 'f1': 0.9077, 'num': 1711}, 'CLA': {'acc': 0.6538, 'recall': 0.5129, 'f1': 0.5749, 'num': 232}, 'ORG': {'acc': 0.7122, 'recall': 0.7827, 'f1': 0.7458, 'num': 313}, 'FIR': {'acc': 0.7471, 'recall': 0.8442, 'f1': 0.7927, 'num': 77}, 'BIL': {'acc': 0.9356, 'recall': 0.9692, 'f1': 0.9521, 'num': 195}, 'RIA': {'acc': 0.8925, 'recall': 0.9292, 'f1': 0.9105, 'num': 438}, 'STRAINS': {'acc': 0.8573, 'recall': 0.9231, 'f1': 0.889, 'num': 1093}, 'COI': {'acc': 0.7297, 'recall': 0.8438, 'f1': 0.7826, 'num': 64}}
+-> Valid. time: 30.8107s, loss: 2.2356, f1_score: 93.6957%
+
+* Training epoch 18:
+loss:0.9774445295333862: 100%|██████████| 1495/1495 [09:27<00:00,  2.63it/s]
+-> Training time: 567.9350s, loss = 0.8974, accuracy:
+* Validation for epoch 18:
+正在对验证集进行测试
+{'acc': 0.9330683546788361, 'recall': 0.9379932912391475, 'f1': 0.9355243413446163, 'num': 20272}
+{'DIS': {'acc': 0.9756, 'recall': 0.9767, 'f1': 0.9762, 'num': 2704}, 'CRO': {'acc': 0.9639, 'recall': 0.9646, 'f1': 0.9643, 'num': 4239}, 'DRUG': {'acc': 0.9243, 'recall': 0.9109, 'f1': 0.9176, 'num': 2615}, 'PIT': {'acc': 0.9648, 'recall': 0.97, 'f1': 0.9674, 'num': 4493}, 'PART': {'acc': 0.9056, 'recall': 0.903, 'f1': 0.9043, 'num': 1711}, 'PIR': {'acc': 0.906, 'recall': 0.9142, 'f1': 0.9101, 'num': 2098}, 'STRAINS': {'acc': 0.8615, 'recall': 0.9277, 'f1': 0.8934, 'num': 1093}, 'ORG': {'acc': 0.7135, 'recall': 0.7796, 'f1': 0.745, 'num': 313}, 'CLA': {'acc': 0.6784, 'recall': 0.5, 'f1': 0.5757, 'num': 232}, 'FIR': {'acc': 0.7683, 'recall': 0.8182, 'f1': 0.7925, 'num': 77}, 'BIL': {'acc': 0.9303, 'recall': 0.959, 'f1': 0.9444, 'num': 195}, 'RIA': {'acc': 0.8654, 'recall': 0.9247, 'f1': 0.894, 'num': 438}, 'COI': {'acc': 0.7361, 'recall': 0.8281, 'f1': 0.7794, 'num': 64}}
+-> Valid. time: 30.4062s, loss: 2.2858, f1_score: 93.5524%
+
+* Training epoch 19:
+loss:1.4871470928192139: 100%|██████████| 1495/1495 [09:25<00:00,  2.64it/s]
+-> Training time: 565.6979s, loss = 0.9624, accuracy:
+* Validation for epoch 19:
+正在对验证集进行测试
+{'acc': 0.9314403413270561, 'recall': 0.9369080505130228, 'f1': 0.9341661953126922, 'num': 20272}
+{'PIT': {'acc': 0.9659, 'recall': 0.9695, 'f1': 0.9677, 'num': 4493}, 'CLA': {'acc': 0.6281, 'recall': 0.5388, 'f1': 0.58, 'num': 232}, 'DRUG': {'acc': 0.9193, 'recall': 0.9105, 'f1': 0.9149, 'num': 2615}, 'CRO': {'acc': 0.9611, 'recall': 0.962, 'f1': 0.9616, 'num': 4239}, 'DIS': {'acc': 0.9731, 'recall': 0.9763, 'f1': 0.9747, 'num': 2704}, 'PART': {'acc': 0.9069, 'recall': 0.9001, 'f1': 0.9035, 'num': 1711}, 'PIR': {'acc': 0.9051, 'recall': 0.9142, 'f1': 0.9097, 'num': 2098}, 'FIR': {'acc': 0.7619, 'recall': 0.8312, 'f1': 0.795, 'num': 77}, 'RIA': {'acc': 0.885, 'recall': 0.9132, 'f1': 0.8989, 'num': 438}, 'ORG': {'acc': 0.7202, 'recall': 0.7732, 'f1': 0.7458, 'num': 313}, 'STRAINS': {'acc': 0.8613, 'recall': 0.9204, 'f1': 0.8899, 'num': 1093}, 'COI': {'acc': 0.7179, 'recall': 0.875, 'f1': 0.7887, 'num': 64}, 'BIL': {'acc': 0.9303, 'recall': 0.959, 'f1': 0.9444, 'num': 195}}
+-> Valid. time: 30.4663s, loss: 2.2554, f1_score: 93.4166%
+
+* Training epoch 20:
+loss:0.8418598771095276: 100%|██████████| 1495/1495 [09:25<00:00,  2.64it/s]
+-> Training time: 565.7123s, loss = 1.0272, accuracy:
+* Validation for epoch 20:
+正在对验证集进行测试
+{'acc': 0.9303375196232339, 'recall': 0.9354775059194949, 'f1': 0.9329004329004329, 'num': 20272}
+{'PART': {'acc': 0.9002, 'recall': 0.896, 'f1': 0.8981, 'num': 1711}, 'DRUG': {'acc': 0.9205, 'recall': 0.9071, 'f1': 0.9137, 'num': 2615}, 'PIT': {'acc': 0.9654, 'recall': 0.9697, 'f1': 0.9676, 'num': 4493}, 'PIR': {'acc': 0.9036, 'recall': 0.9156, 'f1': 0.9096, 'num': 2098}, 'CRO': {'acc': 0.9609, 'recall': 0.962, 'f1': 0.9615, 'num': 4239}, 'DIS': {'acc': 0.9738, 'recall': 0.9752, 'f1': 0.9745, 'num': 2704}, 'FIR': {'acc': 0.7619, 'recall': 0.8312, 'f1': 0.795, 'num': 77}, 'RIA': {'acc': 0.8747, 'recall': 0.9247, 'f1': 0.899, 'num': 438}, 'STRAINS': {'acc': 0.865, 'recall': 0.903, 'f1': 0.8836, 'num': 1093}, 'ORG': {'acc': 0.7164, 'recall': 0.7668, 'f1': 0.7407, 'num': 313}, 'COI': {'acc': 0.7143, 'recall': 0.8594, 'f1': 0.7801, 'num': 64}, 'CLA': {'acc': 0.6009, 'recall': 0.5517, 'f1': 0.5753, 'num': 232}, 'BIL': {'acc': 0.935, 'recall': 0.959, 'f1': 0.9468, 'num': 195}}
+-> Valid. time: 30.5048s, loss: 2.2341, f1_score: 93.2900%
+
+
+Process finished with exit code 0

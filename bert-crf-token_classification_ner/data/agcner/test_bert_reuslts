@@ -1,0 +1,17 @@
+processed 372812 tokens with 20122 phrases; found: 20249 phrases; correct: 19026.
+accuracy:  98.31%; precision:  93.96%; recall:  94.55%; FB1:  94.26
+              BIL: precision:  86.52%; recall:  95.06%; FB1:  90.59  178
+              CLA: precision:  68.12%; recall:  49.10%; FB1:  57.07  160
+              COI: precision:  72.97%; recall:  87.10%; FB1:  79.41  111
+              CRO: precision:  95.79%; recall:  96.74%; FB1:  96.27  4063
+              DIS: precision:  97.83%; recall:  98.04%; FB1:  97.94  2815
+             DRUG: precision:  93.11%; recall:  92.68%; FB1:  92.89  2555
+              FIR: precision:  91.30%; recall:  97.22%; FB1:  94.17  115
+              ORG: precision:  77.67%; recall:  76.43%; FB1:  77.05  309
+             PART: precision:  91.35%; recall:  92.11%; FB1:  91.73  1688
+              PIR: precision:  90.23%; recall:  92.39%; FB1:  91.30  2221
+              PIT: precision:  97.10%; recall:  97.28%; FB1:  97.19  4420
+              RIA: precision:  89.57%; recall:  94.50%; FB1:  91.97  441
+          STRAINS: precision:  91.99%; recall:  93.74%; FB1:  92.86  1173
+{'acc': 0.9398804525020995, 'recall': 0.9455322532551437, 'f1': 0.9426978818283167, 'num': 20122}
+{'PART': {'acc': 0.9135, 'recall': 0.9211, 'f1': 0.9173, 'num': 1674}, 'DIS': {'acc': 0.9787, 'recall': 0.9804, 'f1': 0.9795, 'num': 2809}, 'CRO': {'acc': 0.9579, 'recall': 0.9674, 'f1': 0.9627, 'num': 4023}, 'STRAINS': {'acc': 0.9206, 'recall': 0.9374, 'f1': 0.929, 'num': 1151}, 'PIT': {'acc': 0.971, 'recall': 0.9728, 'f1': 0.9719, 'num': 4412}, 'PIR': {'acc': 0.9023, 'recall': 0.9239, 'f1': 0.913, 'num': 2169}, 'DRUG': {'acc': 0.9311, 'recall': 0.9268, 'f1': 0.9289, 'num': 2567}, 'BIL': {'acc': 0.875, 'recall': 0.9506, 'f1': 0.9112, 'num': 162}, 'RIA': {'acc': 0.8998, 'recall': 0.945, 'f1': 0.9218, 'num': 418}, 'CLA': {'acc': 0.6813, 'recall': 0.491, 'f1': 0.5707, 'num': 222}, 'FIR': {'acc': 0.913, 'recall': 0.9722, 'f1': 0.9417, 'num': 108}, 'ORG': {'acc': 0.7767, 'recall': 0.7643, 'f1': 0.7705, 'num': 314}, 'COI': {'acc': 0.7297, 'recall': 0.871, 'f1': 0.7941, 'num': 93}}
